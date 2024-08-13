@@ -17,6 +17,7 @@ while True:
 
     face_locations = face_recognition.face_locations(rgb_frame)
 
+    face_encodings = []
     if face_locations:
         face_encodings = face_recognition.face_encodings(rgb_frame, face_locations)
     else:
